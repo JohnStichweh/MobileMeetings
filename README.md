@@ -6,4 +6,5 @@ Do you have trouble keeping track of meetings and events? Are you often confused
 * Schedule meetings and events
 * Remember the details of upcoming meetings and events
 * RSVP to a meeting or event
+
 Create a calendar on your Android device. Get notifications reminding you of upcoming meetings and events. View details of meetings and events. Respond to meetings and events with “Able to attend”, “Unable to attend”, or “Might be able to attend”.

@@ -8,3 +8,21 @@ Do you have trouble keeping track of meetings and events? Are you often confused
 * RSVP to a meeting or event
 
 Create a calendar on your Android device. Get notifications reminding you of upcoming meetings and events. View details of meetings and events. Respond to meetings and events with “Able to attend”, “Unable to attend”, or “Might be able to attend”.
+
+## Storyboard
+
+## Functional Requirements
+
+## Class Diagram
+
+## Class Diagram Description
+
+## A Product Backlog
+(see projects)
+
+## kanban board
+(see projects)
+
+## Scrum Roles
+
+## link to standup

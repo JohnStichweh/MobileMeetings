@@ -15,7 +15,19 @@ Create a calendar on your Android device. Get notifications reminding you of upc
 
 ## Class Diagram
 
+![MobileMeetings Class Diagram](images/Mobile%20Meetings%20Class%20Diagram.png)
+
 ## Class Diagram Description
+
+**MainActivity**: The first screen a user sees, this will show an empty calendar, an option to create a new meeting, and the option to create an account.
+**RetrofitClientInstance**: Bootstrap class required for Retrofit.
+**MeetingDetailActivity**: A screen that will provide users with details of a meeting.
+**Calendar**: Noun that represents a date.
+**Meeting**: Noun that represents a meeting.
+**User**: Noun that represents a user.
+**ICalendarDAO**: Interface for Retrofit to find and parse Calendar JSON.
+**INewMeetingsDAO**: Interface for Room to persist meeting Data.
+**INewUserDAO**: Interface for Room to persist User Data.
 
 ## A Product Backlog
 (see projects)

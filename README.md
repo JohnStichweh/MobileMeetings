@@ -36,10 +36,10 @@ Create a calendar on your Android device. Get notifications reminding you of upc
 (see projects)
 
 ## Scrum Roles
--ProductOwner/Scrum Master: Brandon Zachary
--DevOps: Sara Barnes, Mark Rankey
--Frontend Developers: Ruairi Blake, Chevaux Beasley
--Backend Developer: Ruairi Blake
+- ProductOwner/Scrum Master: Brandon Zachary
+- DevOps: Sara Barnes, Mark Rankey
+- Frontend Developers: Ruairi Blake, Chevaux Beasley
+- Backend Developer: Ruairi Blake
 
 ## Link to Standup
 [Teams Meeting](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OTNmZWYzZjItYWU3ZC00MzU1LTgzZTgtMjA0YTIwM2VhNWJm%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522f5222e6c-5fc6-48eb-8f03-73db18203b63%2522%252c%2522Oid%2522%253a%2522bb098382-c32b-4c7f-b88e-38b615eafb9b%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=b7dca148-db2a-41e2-a958-008e2b935268&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true)

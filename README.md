@@ -1,9 +1,9 @@
 # MobileMeetings
 
-Bradon Zachary
-Sara Barnes
-Chevaux Beasley
-Ruairi Blake
+Bradon Zachary\
+Sara Barnes\
+Chevaux Beasley\
+Ruairi Blake\
 Mark Rankey
 
 

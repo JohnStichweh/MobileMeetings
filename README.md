@@ -13,6 +13,101 @@ Create a calendar on your Android device. Get notifications reminding you of upc
 
 ## Functional Requirements
 
+### Requirement 100.0 Schedule meeting or event
+#### Scenario
+As a user interested in scheduling meetings or events, I want to be able to schedule a meeting or event
+
+#### Dependencies
+Calendar data
+
+#### Assumptions
+Language set to English
+
+#### Examples
+1.1
+
+**Given** I want to schedule a meeting
+
+**When** I schedule a meeting at 3pm on July 20th using Zoom
+
+**Then** This meeting should appear in my calendar:
+
+Date: July 20th, Time 3:00pm, Location: Zoom
+
+1.2
+
+**Given** I want to schedule an event
+
+**When** I schedule an event for noon on August 12th at Summit Park
+
+**Then** This event should appear in my calendar:
+
+Date: August 12th, Time: 12:00pm, Location: Summit Park
+
+### Requirement 101 View upcoming meetings and events
+#### Scenario
+As a user with potential upcoming meetings or events, I want to be able to view my upcoming meetings and events
+
+#### Dependencies
+Calendar data
+
+#### Assumptions
+Language set to English
+
+#### Examples
+1.1
+
+**Given** Calendar data is accessible
+
+**When** I view my upcoming meetings/events for the day
+
+**Then** I should see all of my upcoming meetings/events for the day
+
+1.2
+
+**Given** Calendar data is accessible
+
+**When** I view my upcoming meetings/events for the week
+
+**Then** I should see all of my upcoming meetings/events for the week
+
+1.3
+
+**Given** Calendar data is accessible
+
+**When** I view my upcoming meetings/events for the month
+
+**Then** I should see all of my upcoming meetings/events for the month
+
+
+### Requirement 102 RSVP to upcoming meetings and events
+#### Scenario
+As a user with upcoming meetings or events, I want to be able to RSVP to my upcoming meetings and events
+
+#### Dependencies
+Calendar data
+
+#### Assumptions
+Language set to English
+
+#### Examples
+1.1
+
+**Given** Calendar data is accessible
+
+**When** I RSVP to someone's meeting/event
+
+**Then** The owner of the meeting/event should see that I have RSVPd
+
+1.2
+
+**Given** Calendar data is accessible
+
+**When** I decline someone's meeting/event
+
+**Then** The owner of the meeting/event should see that I have declined and it should be removed from my calendar
+
+
 ## Class Diagram
 
 ![MobileMeetings Class Diagram](images/Mobile%20Meetings%20Class%20Diagram.png)

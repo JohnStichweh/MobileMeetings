@@ -1,5 +1,11 @@
-# MobileDeviceProject
-This repo is for our Mobile Device Programming group project
+# MobileMeetings
+
+Bradon Zachary
+Sara Barnes
+Chevaux Beasley
+Ruairi Blake
+Mark Rankey
+
 
 ## Introduction
 Do you have trouble keeping track of meetings and events? Are you often confused about where or within what application a meeting will take place? (App name) can help you:

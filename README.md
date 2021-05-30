@@ -17,7 +17,7 @@ Create a calendar on your Android device. Get notifications reminding you of upc
 
 ## Storyboard
 <img width="221" alt="Storyboard" src="https://user-images.githubusercontent.com/47151930/120106480-0c5b5a00-c12b-11eb-99cf-66b9a6c08b49.PNG">
-[Storyboard] (https://projects.invisionapp.com/prototype/MobileMeetings-Storyboard-ckpb84jqb0045i901s8itkwb2/play/6702777a)
+<a href="https://projects.invisionapp.com/prototype/MobileMeetings-Storyboard-ckpb84jqb0045i901s8itkwb2/play/6702777a"> Storyboard </a>
 
 ## Functional Requirements
 

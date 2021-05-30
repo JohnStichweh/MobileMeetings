@@ -16,6 +16,8 @@ Do you have trouble keeping track of meetings and events? Are you often confused
 Create a calendar on your Android device. Get notifications reminding you of upcoming meetings and events. View details of meetings and events. Respond to meetings and events with “Able to attend”, “Unable to attend”, or “Might be able to attend”.
 
 ## Storyboard
+<img width="221" alt="Storyboard" src="https://user-images.githubusercontent.com/47151930/120106480-0c5b5a00-c12b-11eb-99cf-66b9a6c08b49.PNG">
+[Storyboard](https://projects.invisionapp.com/prototype/MobileMeetings-Storyboard-ckpb84jqb0045i901s8itkwb2/play/6702777a)
 
 ## Functional Requirements
 

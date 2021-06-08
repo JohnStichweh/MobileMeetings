@@ -1,11 +1,15 @@
 package com.it3048.mobiledeviceproject
 
+import android.content.DialogInterface
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,10 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
+        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { addForm() }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -34,5 +35,30 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    private fun addForm() {
+        val dialog: android.app.AlertDialog.Builder = android.app.AlertDialog.Builder(this)
+        dialog.setMessage("Input meeting details")
+        dialog.setTitle("New Meeting")
+        //TODO: @RUAIRI insert inputs here
+        //title
+        //date/time
+        //description
+        //location/link
+        //color
+
+        dialog.setPositiveButton("Submit",
+            DialogInterface.OnClickListener { dialog, which ->
+                Toast.makeText(applicationContext, "Submitted", Toast.LENGTH_LONG)
+                    .show()
+            })
+        dialog.setNegativeButton("cancel",
+            DialogInterface.OnClickListener { dialog, which ->
+                Toast.makeText(applicationContext, "Cancelled", Toast.LENGTH_LONG)
+                    .show()
+            })
+        val alertDialog: android.app.AlertDialog? = dialog.create()
+        alertDialog?.show()
     }
 }

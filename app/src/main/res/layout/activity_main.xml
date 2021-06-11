@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
@@ -18,12 +19,23 @@
         android:layout_height="match_parent">
 
         <CalendarView
-            android:id="@+id/calendarView"
+            android:id="@+id/calendarView2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="start|top" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

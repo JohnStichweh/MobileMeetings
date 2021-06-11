@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:overScrollMode="always"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="408dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="New Meeting"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meetingDate"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="--/--/--- --:--"
+        android:inputType="datetime"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDescripton"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textLongMessage|textMultiLine|text"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="131dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="360dp"
+        android:text="Cancel"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMeetingTitle"
+        android:layout_width="226dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Meeting Title"
+        android:inputType="textShortMessage|text"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="131dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="360dp"
+        android:text="Submit"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLocLink"
+        android:layout_width="308dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="272dp"
+        android:ems="10"
+        android:hint="Location/Link"
+        android:inputType="textLongMessage|text"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/meetingColor"
+        android:layout_width="117dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:entries="@array/colors"
+        android:spinnerMode="dropdown"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

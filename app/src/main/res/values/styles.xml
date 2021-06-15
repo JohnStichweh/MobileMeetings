@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -15,5 +15,22 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<!--    <style name="addForm" parent="@android:style/Theme.Dialog">-->
+<!--        <item name="android:background">@android:color/background_light</item>-->
+<!--        <item name="android:textColor">@android:color/primary_text_light</item>-->
+<!--&lt;!&ndash;        <item name="android:typeface">monospace</item>&ndash;&gt;-->
+<!--        <item name="android:textSize">10sp</item>-->
+<!--    </style>-->
+
+<!--    <style name="datePicker" parent="Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="colorAccent">#ff6d00</item>-->
+<!--        <item name="colorControlActivated">#33691e</item>-->
+<!--        <item name="android:calendarViewShown">false</item>-->
+<!--        <item name="android:spinnersShown">true</item>-->
+<!--        <item name="android:datePickerMode" tools:targetApi="lollipop">spinner</item>-->
+<!--        <item name="colorControlHighlight">#d50000</item>-->
+<!--    </style>-->
+
 
 </resources>

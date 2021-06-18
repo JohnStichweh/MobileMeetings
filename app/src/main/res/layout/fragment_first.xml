@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-    <TextView
+    <TextClock
         android:id="@+id/CurrentDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/scheduleList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="jelly_bean_mr1" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/scheduleList"

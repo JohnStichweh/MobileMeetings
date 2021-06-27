@@ -20,12 +20,10 @@ class AddMeetingForm: DialogFragment() {
 
         rootView.cancelButton.setOnClickListener{
             dismiss()
-            rootView.editTextMeetingTitle.setText("")
-            rootView.meetingColor.selectedItem.toString()
-            rootView.meetingDate.setText("")
-            rootView.editTextDescripton.setText("")
-            rootView.editTextLocLink.setText("")
+            clearFields(rootView)
         }
+
+
 
         rootView.submitButton.setOnClickListener{
             //this is where the inputs get saved to state
@@ -44,11 +42,19 @@ class AddMeetingForm: DialogFragment() {
 
 
             dismiss()
-
+            clearFields(rootView)
         }
 
 
 
         return rootView
+    }
+    // clear the fields in the new meeting form
+    private fun clearFields(rootView: View) {
+        rootView.editTextMeetingTitle.setText("")
+        rootView.meetingColor.selectedItem.toString()
+        rootView.meetingDate.setText("")
+        rootView.editTextDescripton.setText("")
+        rootView.editTextLocLink.setText("")
     }
 }

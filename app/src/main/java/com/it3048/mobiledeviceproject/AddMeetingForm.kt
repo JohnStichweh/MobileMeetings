@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import dto.Meeting
+import kotlinx.android.synthetic.main.add_meeting_form.*
 import kotlinx.android.synthetic.main.add_meeting_form.view.*
 
 class AddMeetingForm: DialogFragment() {
@@ -47,8 +49,20 @@ class AddMeetingForm: DialogFragment() {
 
         }
 
-
-
         return rootView
+
+        submitButton.setOnClickListener(){
+            saveMeeting()
+        }
+    }
+    private fun saveMeeting() {
+        var meeting = Meeting().apply{
+            meetingTitle = editTextMeetingTitle.text.toString();
+            color = meetingColor.selectedItem.toString();
+            dateAndTime = meetingDate.text.toString();
+            description = editTextDescripton.text.toString();
+            location = editTextLocLink.text.toString();
+        }
+
     }
 }

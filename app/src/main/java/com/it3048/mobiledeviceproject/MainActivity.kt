@@ -18,8 +18,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 
+
 class MainActivity : AppCompatActivity() {
     var addMeetingForm = AddMeetingForm()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

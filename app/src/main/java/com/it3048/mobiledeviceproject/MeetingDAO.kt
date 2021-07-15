@@ -4,7 +4,7 @@ import java.text.DateFormat
 
 data class MeetingDAO(
     var meetingTitle: String,
-    var meetingDate: DateFormat,
+    var meetingDate: String,
     var meetingDescription: String,
     var meetingLocLink: String
 ) {

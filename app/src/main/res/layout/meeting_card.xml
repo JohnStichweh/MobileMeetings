@@ -31,16 +31,23 @@
                 android:text="Title" />
 
             <TextView
+                android:id="@+id/meetingDateTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000" />
+
+            <TextView
                 android:id="@+id/meetingDescriptionTxt"
                 android:layout_width="match_parent"
-                android:layout_height="96dp"
+                android:layout_height="80dp"
                 android:text="Description" />
 
             <TextView
-                android:id="@+id/meetingLinkTxt"
+                android:id="@+id/meetingUrlTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="www.meeting.com" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

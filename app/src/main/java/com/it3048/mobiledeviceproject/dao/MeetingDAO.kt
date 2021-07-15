@@ -9,8 +9,8 @@ interface MeetingDAO {
     @Insert
     fun createMeeting(meetings: Meeting)
 
-    @Query("SELECT * FROM meetings")
-    fun getAll(): LiveData<List<Meeting>>
+    @Query("SELECT * FROM meetings WHERE userCode LIKE :userCode")
+    fun getAll(userCode: String): LiveData<List<Meeting>>
 
     @Query("SELECT * FROM meetings WHERE meetingCode LIKE :meetingCode")
     fun getMeetingDetails(meetingCode: String): Meeting

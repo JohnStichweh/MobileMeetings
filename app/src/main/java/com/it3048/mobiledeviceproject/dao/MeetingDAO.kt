@@ -6,12 +6,16 @@ import androidx.room.*
 
 @Dao
 interface MeetingDAO {
-    @Insert
-    fun createMeeting(meetings: Meeting)
 
     @Query("SELECT * FROM meetings WHERE userCode LIKE :userCode")
     fun getAll(userCode: String): LiveData<List<Meeting>>
 
+    @Query("SELECT * FROM meetings WHERE (userCode LIKE :userCode) AND (meetingDate LIKE :meetingDate)")
+    fun getAllForDate(userCode: String, meetingDate: String): LiveData<List<Meeting>>
+
     @Query("SELECT * FROM meetings WHERE meetingCode LIKE :meetingCode")
     fun getMeetingDetails(meetingCode: String): Meeting
+
+    @Insert
+    fun save(meeting: Meeting)
 }

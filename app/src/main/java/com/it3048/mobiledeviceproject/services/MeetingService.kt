@@ -16,6 +16,10 @@ import kotlinx.coroutines.withContext
 class MeetingService(application: Application) {
     private val application = application
 
+    internal fun save(meeting: Meeting) {
+        getLocalMeetingDAO().save(meeting)
+    }
+
     internal suspend fun getAllUsersMeetings(userCode: String) {
         withContext(Dispatchers.IO) {
             val service = RetrofitInstance.retrofitInstance?.create(MeetingDAO::class.java)

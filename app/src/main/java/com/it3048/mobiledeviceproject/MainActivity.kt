@@ -22,7 +22,8 @@ import kotlin.collections.ArrayList
 
 
 class MainActivity : AppCompatActivity() {
-    var addMeetingForm = AddMeetingForm()
+
+    private var addMeetingForm = AddMeetingForm()
     lateinit var recyclerView: RecyclerView
     lateinit var meetingList:ArrayList<MeetingDAO>
     lateinit var meetingAdapter: MeetingAdapter
@@ -33,10 +34,12 @@ class MainActivity : AppCompatActivity() {
     val meetingDescription = v.findViewById<TextView>(R.id.meetingDescriptionTxt)
     val meetingLink = v.findViewById<TextView>(R.id.meetingUrlTxt)
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+
         /** Set up list */
         meetingList = ArrayList()
         recyclerView = findViewById(R.id.eventsList)
@@ -48,6 +51,8 @@ class MainActivity : AppCompatActivity() {
         val link = meetingLink.text.toString()
         meetingList.add(MeetingDAO("$title", "$date", "$description", "Location: $link"))
 
+        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { addMeetingForm.show(supportFragmentManager, "addForm") }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -57,9 +62,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+        /**
+        * Handle action bar item clicks here. The action bar will
+        * automatically handle clicks on the Home/Up button, so long
+        * as you specify a parent activity in AndroidManifest.xml.
+        */
         return when (item.itemId) {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
